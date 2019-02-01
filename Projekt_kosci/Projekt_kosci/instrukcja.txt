@@ -1,0 +1,50 @@
+Uzywa sie pieciu klasycznych kosci do gry o ksztalcie szescianu z liczba punktow 1, 2, 3, 4, 5 i 6 na poszczegolnych sciankach.
+W kazdej kolejce gracz ma do dyspozycji trzy rzuty kostkami. 
+Pierwszy rzut odbywa sie zawsze wszystkimi piecioma kostkami.
+Przy nastepnych dwoch nieobowiazkowych rzutach gracz moze wybrac ze wszystkich kostki zatrzymane a niezatrzymanymi wykonuje rzut.
+Celem rzutow w kolejce jest uzyskanie odpowiedniej kombinacji. 
+Po wykonaniu rzutow uklad oczek uzyskany na kostkach musi zostac zapisany przez gracza w tabeli punktacji do jednej z kategorii.
+Za wybrana kategorie otrzymuje sie odpowiednia liczbe punktow. 
+Raz wybrana kategoria nie moze zostac uzyta ponownie. Koniec gry nastepuje z chwila uzycia ostatniej kategorii w tabelce.
+Wygrywa gracz z najwieksza liczba punktow.
+--------------------------------------------------------------------------
+| Kategoria |                           Przyklady                        |
+--------------------------------------------------------------------------
+| Jedynki   | Ilosci oczek na kosciach: 1 1 1 3 5	Wynik: 3 punkty  |
+--------------------------------------------------------------------------
+| Dwojki    | Ilosci oczek na kosciach: 2 2 2 1 4	Wynik: 6 punktow |
+--------------------------------------------------------------------------
+| Trojki    | Ilosci oczek na kosciach: 3 3 6 3 3 	Wynik: 12 punktow|
+--------------------------------------------------------------------------
+| Czworki   | Ilosci oczek na kosciach: 4 4 5 5 6 	Wynik: 12 punktow|
+--------------------------------------------------------------------------
+| Piatki    | Ilosci oczek na kosciach: 1 2 3 5 5	Wynik: 10 punktow|
+--------------------------------------------------------------------------
+| Szostki   | Ilosci oczek na kosciach: 2 3 6 6 6	Wynik: 18 punktow|
+--------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------
+| Kategoria   |  Warunek do zdobycia punktow   |         Wynik         |                         Przyklady                       |
+----------------------------------------------------------------------------------------------------------------------------------
+| 3 jednakowe |     Trzy jednakowe kosci       | Suma wszystkich kosci | Ilosci oczek na kosciach: 2 3 4 4 4	Wynik: 17 punktow|
+----------------------------------------------------------------------------------------------------------------------------------
+| 4 jednakowe |    Cztery jednakowe kosci      | Suma wszystkich kosci | Ilosci oczek na kosciach: 4 5 5 5 5	Wynik: 24 punkty |
+----------------------------------------------------------------------------------------------------------------------------------
+| Full	      |         Trojka i para          |           25          | Ilosci oczek na kosciach: 2 2 5 5 5	Wynik: 25 punktow|
+----------------------------------------------------------------------------------------------------------------------------------
+| Maly strit  |Cztery kosci z oczkami po kolei |           30          | Ilosci oczek na kosciach: 1 3 4 5 6	Wynik: 30 punktow|
+----------------------------------------------------------------------------------------------------------------------------------
+| Duzy strit  | Piec kosci z oczkami po kolei  |           40          | Ilosci oczek na kosciach: 2 3 4 5 6	Wynik: 40 punktow|
+----------------------------------------------------------------------------------------------------------------------------------
+|  General    |    Piec jednakowych kosci      |           50          | Ilosci oczek na kosciach: 2 2 2 2 2	Wynik: 50 punktow|
+----------------------------------------------------------------------------------------------------------------------------------
+|   Szansa    |              -                 | Suma wszystkich kosci | Ilosci oczek na kosciach: 2 3 4 4 6	Wynik: 19 punktow|
+----------------------------------------------------------------------------------------------------------------------------------
+Wyboru kazdej z wolnych kategorii mozna dokonac niezaleznie od posiadanego ukladu, przy czym jesli nie spelnia on okreslonych wymagan, to otrzymuje sie 0 pkt.
+(taki wybor za 0 pkt. jest czasami konieczny, kiedy uklad nie pasuje do zadnej z wolnych kategorii).
+Duzy strit jest jednym z ukladow z najmniejsza szansa na uzyskanie i jednym z najbardziej punktowanym.
+Najwieksza szanse na uzyskanie duzego strita posiada sie posiadajac kombinacje 2-3-4-5.
+Wowczas dowolna jedynka lub szostka zapewnia ten uklad. 
+Duzego strita mozna tez probowac uzyskac posiadajac juz malego strita.
+Proby uzyskania duzego strita majac juz zapisanego malego strita sa najbardziej problematyczne - w przypadku porazki istnieje problem z zapisem:
+zazwyczaj w takiej sytuacji nie ma zadnych 3 jednakowych kostek co mocno utrudnia wybor kategorii.
